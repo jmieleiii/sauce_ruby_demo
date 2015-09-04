@@ -10,7 +10,8 @@ class SpecHelpers
       @driver = Selenium::WebDriver.for browser_name
     end
 
-    #raise 'Browser is nil' unless browser
+    @browser = driver.browser
+    raise 'Browser is nil' unless browser
     # @driver = browser.driver
     raise 'Driver is nil!' unless driver
 
